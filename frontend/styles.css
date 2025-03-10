@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #3f473f;
+    --secondary-color: #137074;
+    --danger-color: #f44336;
+    --light-bg: #ffffff;
+    --dark-bg: #f0f0f0;
+    --box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+#dataForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#dataForm input, #dataForm button {
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #09a098;
+}
+
+.buttons {
+    grid-column: span 2;
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    cursor: pointer;
+    background: #3eb491;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.contact-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-item {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    transition: var(--transition);
+  }
+  .contact-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  }
+  .contact-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #eee;
+  }
+  
+
+.actions button {
+    margin-left: 0.5rem;
+    background: #319497;
+}
+
+.actions button.delete {
+    background: #a17774;
+}
